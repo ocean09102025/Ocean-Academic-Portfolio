@@ -1,0 +1,56 @@
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\bin\Debug\net9.0\Vector.exe
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\bin\Debug\net9.0\Vector.deps.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\bin\Debug\net9.0\Vector.runtimeconfig.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\bin\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\bin\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\Vector.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\Vector.AssemblyInfoInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\Vector.AssemblyInfo.cs
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\Vector.csproj.CoreCompileInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\refint\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\Vector.genruntimeconfig.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\Vector\obj\Debug\net9.0\ref\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\bin\Debug\net9.0\Vector.exe
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\bin\Debug\net9.0\Vector.deps.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\bin\Debug\net9.0\Vector.runtimeconfig.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\bin\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\bin\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\Vector.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\Vector.AssemblyInfoInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\Vector.AssemblyInfo.cs
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\Vector.csproj.CoreCompileInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\refint\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\Vector.genruntimeconfig.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 5\Vector\obj\Debug\net9.0\ref\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\bin\Debug\net9.0\Vector.exe
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\bin\Debug\net9.0\Vector.deps.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\bin\Debug\net9.0\Vector.runtimeconfig.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\bin\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\bin\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\Vector.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\Vector.AssemblyInfoInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\Vector.AssemblyInfo.cs
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\Vector.csproj.CoreCompileInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\refint\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\Vector.genruntimeconfig.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.3 C\Vector\obj\Debug\net9.0\ref\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\bin\Debug\net9.0\Vector.exe
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\bin\Debug\net9.0\Vector.deps.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\bin\Debug\net9.0\Vector.runtimeconfig.json
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\bin\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\bin\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\Vector.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\Vector.AssemblyInfoInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\Vector.AssemblyInfo.cs
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\Vector.csproj.CoreCompileInputs.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\refint\Vector.dll
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\Vector.pdb
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\Vector.genruntimeconfig.cache
+E:\Trimester 4\Data Structures and Algorithms\Coding\Week 4\4.4 HD\Vector\obj\Debug\net9.0\ref\Vector.dll

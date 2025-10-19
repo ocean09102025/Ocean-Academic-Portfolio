@@ -1,0 +1,14 @@
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\TimeController.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\TimeController.AssemblyInfoInputs.cache
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\TimeController.AssemblyInfo.cs
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\TimeController.csproj.CoreCompileInputs.cache
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\bin\Debug\net8.0\TimeController.exe
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\bin\Debug\net8.0\TimeController.deps.json
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\bin\Debug\net8.0\TimeController.runtimeconfig.json
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\bin\Debug\net8.0\TimeController.dll
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\bin\Debug\net8.0\TimeController.pdb
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\TimeController.dll
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\refint\TimeController.dll
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\TimeController.pdb
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\TimeController.genruntimeconfig.cache
+E:\Trimester2\Coding\Week 5\TimeControllera\TimeController\obj\Debug\net8.0\ref\TimeController.dll

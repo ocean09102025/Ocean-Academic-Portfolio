@@ -1,0 +1,20 @@
+# Large video files (exceed GitHub's 100MB limit)
+*.mp4
+
+# Build artifacts and binaries
+*.exe
+*.dll
+*.pdb
+*.suo
+*.cache
+*.bin
+
+# IDE and editor files
+.vs/
+.vscode/settings.json
+*.vsidx
+
+# OS files
+.DS_Store
+Thumbs.db
+
