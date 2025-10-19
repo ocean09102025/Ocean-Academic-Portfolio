@@ -1,0 +1,54 @@
+[
+  { "id": "flow1", "type": "tab", "label": "Flow 1" },
+
+  { "id": "httpin1", "type": "http in", "z": "flow1", "name": "POST /sensor",
+    "url": "/sensor", "method": "post", "upload": false, "swaggerDoc": "",
+    "x": 100, "y": 120, "wires": [["json1"]] },
+
+  { "id": "json1", "type": "json", "z": "flow1", "name": "parse JSON",
+    "pretty": false, "x": 280, "y": 120, "wires": [["func1","debug_in"]] },
+
+  { "id": "func1", "type": "function", "z": "flow1", "name": "threshold check",
+    "func":
+"let lvl;\nif (typeof msg.payload === 'string') {\n  try { msg.payload = JSON.parse(msg.payload); }\n  catch (e) { node.error('Invalid JSON string', msg); return null; }\n}\nlvl = Number(msg.payload && msg.payload.stock_level);\nmsg.computedLevel = lvl;\nmsg.lowStock = Number.isFinite(lvl) && (lvl < 10);\nreturn msg;",
+    "outputs": 1, "noerr": 0, "libs": [], "x": 470, "y": 120, "wires": [["switch1"]] },
+
+  { "id": "switch1", "type": "switch", "z": "flow1", "name": "lowStock?",
+    "property": "lowStock", "propertyType": "msg",
+    "rules": [{"t":"true"},{"t":"false"}], "checkall": "true", "repair": false,
+    "outputs": 2, "x": 650, "y": 120, "wires": [["chg_headers"],["tmplOk"]] },
+
+  { "id": "chg_headers", "type": "change", "z": "flow1", "name": "set JSON header",
+    "rules": [{"t":"set","p":"headers","pt":"msg","to":"{\"Content-Type\":\"application/json\"}","tot":"json"}],
+    "x": 860, "y": 90, "wires": [["fn_trim"]] },
+
+  { "id": "fn_trim", "type": "function", "z": "flow1", "name": "payload {item_id,stock,ts}",
+    "func": "const { item_id, stock_level, ts } = msg.payload || {};\nmsg.payload = { item_id, stock_level, ts };\nreturn msg;",
+    "outputs": 1, "noerr": 0, "libs": [], "x": 870, "y": 130, "wires": [["http_upd","tmplLow"]] },
+
+  { "id": "http_upd", "type": "http request", "z": "flow1", "name": "POST /update (inventory)",
+    "method": "POST", "ret": "obj", "paytoqs": "ignore",
+    "url": "http://127.0.0.1:3000/update", "persist": false, "authType": "",
+    "x": 1120, "y": 100, "wires": [["debug_upd"]] },
+
+  { "id": "tmplLow", "type": "template", "z": "flow1", "name": "respond (reorder=needed)",
+    "field": "payload", "fieldType": "msg", "format": "json", "syntax": "mustache",
+    "template": "{\"status\":\"ok\",\"reorder\":\"needed\"}", "output": "str",
+    "x": 1130, "y": 160, "wires": [["httpresp1"]] },
+
+  { "id": "tmplOk", "type": "template", "z": "flow1", "name": "respond (no reorder)",
+    "field": "payload", "fieldType": "msg", "format": "json", "syntax": "mustache",
+    "template": "{\"status\":\"ok\",\"reorder\":\"no\"}", "output": "str",
+    "x": 870, "y": 200, "wires": [["httpresp1"]] },
+
+  { "id": "httpresp1", "type": "http response", "z": "flow1", "name": "",
+    "statusCode": "", "headers": {}, "x": 1320, "y": 160, "wires": [] },
+
+  { "id": "debug_in", "type": "debug", "z": "flow1", "name": "see incoming msg",
+    "active": true, "tosidebar": true, "complete": "true", "targetType": "full",
+    "x": 480, "y": 60, "wires": [] },
+
+  { "id": "debug_upd", "type": "debug", "z": "flow1", "name": "inventory update response",
+    "active": true, "tosidebar": true, "complete": "true", "targetType": "full",
+    "x": 1330, "y": 100, "wires": [] }
+]

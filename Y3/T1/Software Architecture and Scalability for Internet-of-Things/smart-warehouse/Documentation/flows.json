@@ -1,0 +1,189 @@
+[
+    {
+        "id": "f-low-stock-flow",
+        "type": "tab",
+        "label": "Inventory → API",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "inject-1",
+        "type": "inject",
+        "z": "f-low-stock-flow",
+        "name": "Simulate sensor (every 10s)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "fn-build-payload"
+            ]
+        ]
+    },
+    {
+        "id": "fn-build-payload",
+        "type": "function",
+        "z": "f-low-stock-flow",
+        "name": "Build inventory payload",
+        "func": "// Build correct body + headers (camelCase, numbers)\nconst itemId = \"SKU-001\";\nconst stockLevel = Math.floor(Math.random() * 10); // 0..9\n\nmsg.headers = { \"Content-Type\": \"application/json\", \"x-api-key\": \"dev123\" };\nmsg.payload = { itemId, stockLevel, source: \"node-red\", ts: Date.now() };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "http-update"
+            ]
+        ]
+    },
+    {
+        "id": "http-update",
+        "type": "http request",
+        "z": "f-low-stock-flow",
+        "name": "http://localhost:3000/api/orders",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:3000/api/inventory/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "x-api-key",
+                "valueType": "other",
+                "valueValue": "dev123"
+            }
+        ],
+        "x": 700,
+        "y": 100,
+        "wires": [
+            [
+                "debug-ok"
+            ]
+        ]
+    },
+    {
+        "id": "debug-ok",
+        "type": "debug",
+        "z": "f-low-stock-flow",
+        "name": "API response",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "inject-order",
+        "type": "inject",
+        "z": "f-low-stock-flow",
+        "name": "Create sample order",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "fn-build-order"
+            ]
+        ]
+    },
+    {
+        "id": "fn-build-order",
+        "type": "function",
+        "z": "f-low-stock-flow",
+        "name": "Build order payload",
+        "func": "const orderId = `ORD-${Date.now()}`;\nmsg.headers = { \"Content-Type\": \"application/json\", \"x-api-key\": \"dev123\" };\nmsg.payload = { orderId, itemId: \"SKU-001\", qty: 5 };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "http-order"
+            ]
+        ]
+    },
+    {
+        "id": "http-order",
+        "type": "http request",
+        "z": "f-low-stock-flow",
+        "name": "http://localhost:3000/api/orders",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:3000/api/inventory/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            },
+            {
+                "keyType": "other",
+                "keyValue": "x-api-key",
+                "valueType": "other",
+                "valueValue": "dev123"
+            }
+        ],
+        "x": 690,
+        "y": 180,
+        "wires": [
+            [
+                "debug-ok"
+            ]
+        ]
+    }
+]
